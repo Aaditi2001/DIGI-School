@@ -2289,14 +2289,14 @@ div#header-sticky {
 .mean-container .mean-nav ul li a {
   width: 100%;
   padding: 15px 0;
-  color: #fff;
+  color: #033a60;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 14px;
   line-height: 1.5;
   font-weight: 700;
 }
 .mean-container .mean-nav ul li a:hover {
-  color: var(--tp-theme-3);
+  color: #ffc42b;
 }
 
 .mean-container .mean-nav ul li a.mean-expand {
@@ -4359,6 +4359,13 @@ li.appli {
   width: 100%;
   background-size: cover;
 }
+@media only screen and (min-width: 100px) and (max-width: 992px) {
+  .tp-faq__thumb {
+    width:100%;
+    transform: translateX(0px) !important;
+    
+  }
+}
 
 .tp-faq__thumb.t {
   transform: translateX(0px);
@@ -4369,19 +4376,20 @@ li.appli {
   margin-top: 36px;
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+/* @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-faq__thumb {
-    transform: translateX(75px);
+    transform: translateX(75px) !important;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-faq__thumb {
-    transform: translateX(0px);
+    transform: translateX(0px) !important;
+    max-width: 100%;
   }
 }
 @media (max-width: 767px) {
   .tp-faq__thumb {
-    transform: translateX(0px);
+    transform: translateX(0px) !important;
     width: 100%;
   }
 }
@@ -4390,7 +4398,7 @@ li.appli {
   .tp-faq__thumb img {
     max-width: 100%;
   }
-}
+} */
 .tp-faq__right-side {
   background-color: var(--tp-grey-2);
   padding: 70px 40px;
@@ -7185,6 +7193,10 @@ h3.tp-section-title.text-white.wow.tpfadeUp.footer {
   .tp-footer-bottom__logo {
     margin-bottom: 30px;
   }
+  .tp-footer-bottom__logo {
+    width: 50%;
+    margin: auto;
+  }
 }
 .tp-footer-bottom__social ul li {
   display: inline-block;
@@ -7658,7 +7670,7 @@ button#get-started-button {
 
 /* Responsive Fixes */
 @media (max-width: 991px) {
-.row.contact  {
+  .row.contact {
     flex-direction: column;
   }
 
@@ -7669,6 +7681,12 @@ button#get-started-button {
 
   .contact-form {
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info-icon {
+    display: none;
   }
 }
 
